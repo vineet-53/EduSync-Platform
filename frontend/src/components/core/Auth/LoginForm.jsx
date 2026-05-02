@@ -15,7 +15,7 @@ function LoginForm(){
 
   function handleDemoStudent() { 
     let email , password ; 
-    email = "vineetsinghnegi53@gmail.com"; 
+    email = "tecer94797@icubik.com"; 
     password = "S2!Q@7xM9L"
     setFormData({ 
       email, 
