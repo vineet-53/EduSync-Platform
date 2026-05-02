@@ -61,7 +61,7 @@ router.get("/showAllCategories", showAllCategories);
 router.post("/getCategoryPageDetails", categoryPageDetails);
 
 // STUDENT ROUTES
-router.post("/getFullCourseDetails", auth, isStudent, getFullCourseDetails);
+router.post("/getFullCourseDetails", auth, getFullCourseDetails);
 router.post("/createRating", auth, isStudent, createRating);
 router.get("/getAverageRating", getAverageRating);
 router.get("/getReviews", getAllRating);
