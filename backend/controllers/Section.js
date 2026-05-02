@@ -36,7 +36,7 @@ const createSection = async (req, res) => {
 
 const updateSection = async (req, res) => {
   try {
-    const { sectionName, sectionId, courseId } = req.body; //data input
+    const { sectionName, sectionId, courseId } = req.body; 
     if (!sectionName || !sectionId) {
       return res
         .status(400)
