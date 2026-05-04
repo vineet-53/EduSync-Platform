@@ -144,6 +144,7 @@ exports.verifySignature = async (req, res) => {
                 const course = await Course.findByIdAndUpdate(
                     course_id,
                     { $push: { studentsEnrolled: userId } },
+                    { $inc : { sold : 1 }},
                     { new: true }
                 );
                 //update the user

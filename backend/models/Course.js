@@ -21,6 +21,10 @@ const coursesSchema = new mongoose.Schema({
 			ref: "Section",
 		},
 	],
+	sold : { 
+		type : Number,
+		default : 0
+	},
 	ratingAndReviews: [
 		{
 			type: mongoose.Schema.Types.ObjectId,
